@@ -1,0 +1,73 @@
+CSC6301 Class 05 Project 05
+Alexander Medeiros 6/4/2024 
+
+Java program designed to accept user input values and store them in a sorted stack. 
+
+
+Documents and directories:
+
+Class Diagram is found in the PDF file in the parent directory 'SortedStackPackage'. 
+
+Documentation is included in the directory 'SortedStackPackage/docs'. 
+
+Java source code files located in directory 'SortedStackPackage/src'.
+
+Compiled java code located in directory 'SortedStackPackage/build'.
+
+
+Commands for operation:
+
+	Documentation Command:
+	Navigate to directory 'SortedStackPackage', use command: javadoc -d docs src/*.java
+
+	Program Operation Command:
+	Navigate to the 'SortedStackPackage/src' source directory using the command: cd .../SortedStackPackage/src
+
+	The Main is run to execute the program, use the command: java main.java
+
+
+The Main will run, and prompt the user for an integer value. The user may enter an integer, or 'exit' to stop the program.
+
+The program will recieve the integer values and insert them into the stack sorted in order from smallest to largest, then print the stack.
+
+When the program ends the final stack will be printed. 
+
+
+Code Maintenance description:
+
+This program is built using the previous module project 'LinkedListPackage'. 
+
+The following files were modified: 
+
+Main.java, line 15, 17, 18 - 'SortedLinkedList' objects and methods were replaced with 'SortedStack'
+
+InputHandler.java, lines 24, 35, 36 - calls for 'SortedList' objects and methods were replaced with 'sortedStack'
+
+SortedLinkedList.java -> renamed SortedStack.java; 
+
+file now imports stack instead of linked list
+
+class name was changed from 'SortedLinkedList' to 'SortedStack'
+
+class attribute was changed from linked list to stack
+
+insertInOrder() method was modified to initialize a temporary stack
+
+while loop was modified to use 'isEmpty() and peek()' methods to compare user input value to values in the stack
+
+push() method is used to add values to the temporary stack
+
+
+Code Reuse:
+
+Examples of code reuse in this program include using the standard 'Stack' class from java utilities in the file "SortedStack.java". 
+This includes the use of built in methods like "push', 'pop', and 'peek'.
+
+Reusing methods like 'insertInOrder' is also an exmaple of code reuse, since it can be called multiple times to inserte elements into the stack. This code was recycled from the 
+previous project, however instead of a linked list it is now implemented for a stack. 
+
+
+
+
+
+	

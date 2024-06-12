@@ -1,0 +1,54 @@
+CSC6301 Class 04 Project 04
+Alexander Medeiros 6/1/2024 
+
+Java program designed to accept user input values and store them in a sorted linked list. 
+
+
+Documents and directories:
+
+Class Diagram is found in the PDF file in the parent directory 'LinkedListPackage'. 
+
+Documentation is included in the directory 'LinkedListPackage/docs'. 
+
+Java source code files located in directory 'LinkedListPackage/src'.
+
+Compiled java code located in directory 'LinkedListPackage/build'.
+
+
+Commands for operation:
+
+	Documentation Command:
+	Navigate to directory 'LinkedListPackage', use command: javadoc -d docs src/*.java
+
+	Program Operation Command:
+	Navigate to the 'LinkedListPackage/src' source directory using the command: cd .../LinkedListPackage/src
+
+	The Main is run to execute the program, use the command: java main.java
+
+
+The Main will run, and prompt the user for an integer value. The user may enter an integer, or 'exit' to stop the program.
+
+The program will recieve the integer values and insert them into the linked list sorted in order, then print the list. 
+
+When the program ends the final list will be printed. 
+
+
+Code Reuse:
+
+In the program, an example of code reuse is the use of the SortedLinkedList class by both the Main class and the InputHandler class.
+The SortedLinkedList class encapsulates the logic for maintaining a sorted list, and this functionality is utilized by the InputHandler class to insert user inputs in order and by the Main class to display the final sorted list.
+
+Encapsulation of Sorting Logic:
+
+The SortedLinkedList class encapsulates the logic for inserting elements in a sorted manner.
+This logic is reusable and can be used by any other class that needs to maintain a sorted list.
+
+Using SortedLinkedList in InputHandler:
+
+The InputHandler class uses the SortedLinkedList class to insert user inputs while maintaining the sorted order.
+This shows reuse of the sorting logic provided by the SortedLinkedList class.
+
+Displaying the Sorted List in Main:
+
+The Main class uses the SortedLinkedList class to display the final sorted list.
+This shows reuse of the data structure and its toString method to get a string representation of the sorted list.

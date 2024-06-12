@@ -1,0 +1,1 @@
+typeSearchIndex = [{"l":"All Classes and Interfaces","u":"allclasses-index.html"},{"p":"LinkedListPackage.src","l":"InputHandler"},{"p":"LinkedListPackage.src","l":"Main"},{"p":"LinkedListPackage.src","l":"SortedLinkedList"}];updateSearchResults();
